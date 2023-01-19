@@ -1,9 +1,4 @@
-//
-//  SceneDelegate.swift
-//  BodyMindex
-//
-//  Created by Miguel Torres on 17/01/23.
-//
+/* SceneDelegate.swift --> BodyMindex. Created by Miguel Torres on 17/01/23. */
 
 import UIKit
 

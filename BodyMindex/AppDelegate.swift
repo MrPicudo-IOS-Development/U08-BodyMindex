@@ -1,9 +1,4 @@
-//
-//  AppDelegate.swift
-//  BodyMindex
-//
-//  Created by Miguel Torres on 17/01/23.
-//
+/* AppDelegate.swift --> BodyMindex. Created by Miguel Torres on 17/01/23. */
 
 import UIKit
 
