@@ -49,7 +49,7 @@
                                             <constraint firstAttribute="height" constant="35" id="pJN-sd-hGS"/>
                                         </constraints>
                                     </stackView>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="180" minValue="120" maxValue="210" translatesAutoresizingMaskIntoConstraints="NO" id="60O-3u-wTw">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="175" minValue="120" maxValue="210" translatesAutoresizingMaskIntoConstraints="NO" id="60O-3u-wTw">
                                         <rect key="frame" x="-2" y="594" width="394" height="61"/>
                                         <color key="tintColor" red="0.6588235294117647" green="0.36078431372549019" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -80,7 +80,7 @@
                                             <constraint firstAttribute="height" constant="35" id="9ek-SW-iiF"/>
                                         </constraints>
                                     </stackView>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="127.5" minValue="20" maxValue="130" translatesAutoresizingMaskIntoConstraints="NO" id="K6T-km-xNX">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="95" minValue="20" maxValue="130" translatesAutoresizingMaskIntoConstraints="NO" id="K6T-km-xNX">
                                         <rect key="frame" x="-2" y="709" width="394" height="61"/>
                                         <color key="tintColor" red="0.6588235294117647" green="0.36078431372549019" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>

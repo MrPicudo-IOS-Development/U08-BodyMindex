@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43C1ADB2297C98E90007B9EA /* ProgramaticallyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C1ADB1297C98E90007B9EA /* ProgramaticallyVC.swift */; };
 		43ED32832977553E00C41A22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ED32822977553E00C41A22 /* AppDelegate.swift */; };
 		43ED32852977553E00C41A22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ED32842977553E00C41A22 /* SceneDelegate.swift */; };
 		43ED32872977553E00C41A22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ED32862977553E00C41A22 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43C1ADB1297C98E90007B9EA /* ProgramaticallyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramaticallyVC.swift; sourceTree = "<group>"; };
 		43ED327F2977553E00C41A22 /* BodyMindex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BodyMindex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43ED32822977553E00C41A22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43ED32842977553E00C41A22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				43ED32862977553E00C41A22 /* ViewController.swift */,
+				43C1ADB1297C98E90007B9EA /* ProgramaticallyVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			files = (
 				43ED32872977553E00C41A22 /* ViewController.swift in Sources */,
 				43ED32832977553E00C41A22 /* AppDelegate.swift in Sources */,
+				43C1ADB2297C98E90007B9EA /* ProgramaticallyVC.swift in Sources */,
 				43ED32852977553E00C41A22 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,7 +315,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WTLRY9GBMJ;
+				DEVELOPMENT_TEAM = HD288VWUJ8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BodyMindex/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -324,7 +328,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mathreview.BodyMindex;
+				PRODUCT_BUNDLE_IDENTIFIER = miguel.torres.bodymindex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -339,7 +343,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WTLRY9GBMJ;
+				DEVELOPMENT_TEAM = HD288VWUJ8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BodyMindex/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -352,7 +356,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mathreview.BodyMindex;
+				PRODUCT_BUNDLE_IDENTIFIER = miguel.torres.bodymindex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
