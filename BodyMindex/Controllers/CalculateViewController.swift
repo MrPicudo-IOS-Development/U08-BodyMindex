@@ -2,7 +2,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CalculateViewController: UIViewController {
 
     // InterfaceBuilderOutlets para las etiquetas que muestran la altura y el peso.
     @IBOutlet weak var heightLabel: UILabel!
@@ -39,12 +39,18 @@ class ViewController: UIViewController {
         let weight = weightSlider.value
         let BMI = weight / pow(height, 2) // Alternativa: BMI = weight / (height * height)
         print(BMI)
+        
+        /* Código creado para la vista UIViewController creada con código:
         // Creamos un objeto de la clase del nuevo UIViewController, para poder "presentarlo" desde la clase principal.
         let programaticallyVC = ProgramaticallyVC()
         // Pasamos el valor obtenido de nuestro cálculo, al atributo "bmiValue" de la nueva clase UIViewController.
         programaticallyVC.bmiValue = String(format: "%.1f", BMI)
         // Presentamos en forma "modally" el objeto programaticallyVC en la interfaz.
         self.present(programaticallyVC, animated: true)
+         */
+        
+        // Hacemos la transición del segue creado con la siguiente línea de código:
+        self.performSegue(withIdentifier: "goToResults", sender: self)
     }
     
 }
