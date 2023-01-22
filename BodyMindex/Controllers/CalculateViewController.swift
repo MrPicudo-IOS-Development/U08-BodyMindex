@@ -11,6 +11,9 @@ class CalculateViewController: UIViewController {
     @IBOutlet weak var heightSlider: UISlider!
     @IBOutlet weak var weightSlider: UISlider!
     
+    // Creamos un objeto de la estructura BodyMindexBrain para poder acceder a los valores calculados.
+    var bodyMindexBrain = BodyMindexBrain()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Cargamos los valores iniciales de los Sliders.
@@ -32,17 +35,13 @@ class CalculateViewController: UIViewController {
         weightLabel.text = "\(String(format: "%.1f", sender.value)) kg"
     }
     
-    // Variable que va a guardar el valor del IMC calculado en la siguiente función:
-    var bmiValue = "0.0"
-    
     // Acción que realiza el botón "CALCULATE" al ser presionado.
     @IBAction func calculatePressed(_ sender: UIButton) {
-        // Realizamos el cálculo del IMC
+        // Obtenemos los valores que se definieron con los Sliders
         let height = heightSlider.value/100
         let weight = weightSlider.value
-        let BMI = weight / pow(height, 2) // Alternativa: BMI = weight / (height * height)
-        // Pasamos el valor del resultado a la variable externa que puede guardar el valor después de finalizarse el método.
-        bmiValue = String(format: "%.1f", BMI)
+        // Mandamos a llamar al método calculateBMI de la estructura BodyMindexBrain con estos valores
+        bodyMindexBrain.calculateBMI(height: height, weight: weight)
         
         /* Código creado para la vista UIViewController creada con código:
         // Creamos un objeto de la clase del nuevo UIViewController, para poder "presentarlo" desde la clase principal.
@@ -65,7 +64,7 @@ class CalculateViewController: UIViewController {
             // Creamos la referencia a la vista que se activa cuando presionamos el botón de CALCULATE.
             let referenceVCResults = segue.destination as! ResultsViewController
             // Usamos esa referencia para mandar el valor que calculamos en el método calculatePressed.
-            referenceVCResults.bmiValue = bmiValue
+            referenceVCResults.bmiValue = bodyMindexBrain.getBMIValue()
         }
     }
     
