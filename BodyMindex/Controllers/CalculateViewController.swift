@@ -32,13 +32,17 @@ class CalculateViewController: UIViewController {
         weightLabel.text = "\(String(format: "%.1f", sender.value)) kg"
     }
     
+    // Variable que va a guardar el valor del IMC calculado en la siguiente función:
+    var bmiValue = "0.0"
+    
     // Acción que realiza el botón "CALCULATE" al ser presionado.
     @IBAction func calculatePressed(_ sender: UIButton) {
         // Realizamos el cálculo del IMC
         let height = heightSlider.value/100
         let weight = weightSlider.value
         let BMI = weight / pow(height, 2) // Alternativa: BMI = weight / (height * height)
-        print(BMI)
+        // Pasamos el valor del resultado a la variable externa que puede guardar el valor después de finalizarse el método.
+        bmiValue = String(format: "%.1f", BMI)
         
         /* Código creado para la vista UIViewController creada con código:
         // Creamos un objeto de la clase del nuevo UIViewController, para poder "presentarlo" desde la clase principal.
@@ -51,6 +55,18 @@ class CalculateViewController: UIViewController {
         
         // Hacemos la transición del segue creado con la siguiente línea de código:
         self.performSegue(withIdentifier: "goToResults", sender: self)
+    }
+    
+    // Función para preparar cualquier ViewController que sea iniciado por un segue:
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        if(segue.identifier == "goToResults") {
+            // Creamos la referencia a la vista que se activa cuando presionamos el botón de CALCULATE.
+            let referenceVCResults = segue.destination as! ResultsViewController
+            // Usamos esa referencia para mandar el valor que calculamos en el método calculatePressed.
+            referenceVCResults.bmiValue = bmiValue
+        }
     }
     
 }
