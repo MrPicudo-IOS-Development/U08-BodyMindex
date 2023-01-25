@@ -41,7 +41,7 @@ class CalculateViewController: UIViewController {
         let height = heightSlider.value/100
         let weight = weightSlider.value
         // Mandamos a llamar al método calculateBMI de la estructura BodyMindexBrain con estos valores
-        bodyMindexBrain.calculateBMI(height: height, weight: weight)
+        bodyMindexBrain.calculateBMI(height, weight)
         
         /* Código creado para la vista UIViewController creada con código:
         // Creamos un objeto de la clase del nuevo UIViewController, para poder "presentarlo" desde la clase principal.
@@ -65,6 +65,8 @@ class CalculateViewController: UIViewController {
             let referenceVCResults = segue.destination as! ResultsViewController
             // Usamos esa referencia para mandar el valor que calculamos en el método calculatePressed.
             referenceVCResults.bmiValue = bodyMindexBrain.getBMIValue()
+            referenceVCResults.advice = bodyMindexBrain.getAdvice()
+            referenceVCResults.color = bodyMindexBrain.getColor()
         }
     }
     

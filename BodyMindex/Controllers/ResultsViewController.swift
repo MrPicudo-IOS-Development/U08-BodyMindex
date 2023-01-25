@@ -4,17 +4,26 @@ import UIKit
 
 class ResultsViewController: UIViewController {
     
-    // Variable que recibe el valor del IMC calculado en el archivo CalculateViewController.swift
+    // Variables que reciben valores del archivo CalculateViewController, que a su vez los obtiene del BodyMindexBrain.
     var bmiValue: String?
+    var advice: String?
+    var color: UIColor?
     
     // Variables de conexión a la interfaz
+    @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var bmiLabel: UILabel!
     @IBOutlet weak var adviceLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Mostramos el valor que fue recibido de la clase sender, en el texto de la etiqueta de esta vista.
+        // Mostramos los valores que fueron recibidos del View Controller, en la interfaz.
+        messageLabel.textColor = color
+        bmiLabel.textColor = color
         bmiLabel.text = bmiValue
+        adviceLabel.textColor = color
+        adviceLabel.text = advice
+        // view.backgroundColor = color
+        
     }
 
     @IBAction func recalculatePressed(_ sender: UIButton) {

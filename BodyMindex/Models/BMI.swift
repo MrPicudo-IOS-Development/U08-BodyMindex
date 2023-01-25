@@ -4,7 +4,7 @@ import UIKit
 
 struct BMI {
     // Definimos los atributos como constantes porque una vez que se crea el objeto de esta estructura, no cambia ningún valor para dicho objeto, solo se usa una vez.
-    var value: Float
+    let value: Float
     let advice: String
     let color: UIColor
 }
